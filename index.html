@@ -6,41 +6,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <form name="form">
-            <div class="display" id="display">
-                <input type="text" class="natija" placeholder="00000000000"name="displayResult">
-            </div>
-            <div class="buttons">
-                <div class="row">
-                   <input type="button"  name="b9" value="9" onclick="calcNumbers(b9.value)"> 
-                   <input type="button"  name="b8" value="8" onclick="calcNumbers(b8.value)"> 
-                   <input type="button"  name="b7" value="7" onclick="calcNumbers(b7.value)"> 
-                   <input type="button"  name="addb" value="+" onclick="calcNumbers(addb.value)"> 
+    <div class="header">
+        <div class="container">
+            <form name="form">
+                <div class="display" id="display">
+                    <input type="text" class="natija" placeholder="00000000000"name="displayResult">
                 </div>
-                <div class="row">
-                    <input type="button"  name="b6" value="6" onclick="calcNumbers(b6.value)"> 
-                    <input type="button"  name="b5" value="5" onclick="calcNumbers(b5.value)"> 
-                    <input type="button"  name="b4" value="4" onclick="calcNumbers(b4.value)"> 
-                    <input type="button"  name="subb" value="-" onclick="calcNumbers(subb.value)"> 
+                <div class="buttons">
+                    <div class="row">
+                       <input type="button"  name="b9" value="9" onclick="calcNumbers(b9.value)"> 
+                       <input type="button"  name="b8" value="8" onclick="calcNumbers(b8.value)"> 
+                       <input type="button"  name="b7" value="7" onclick="calcNumbers(b7.value)"> 
+                       <input type="button"  name="addb" value="+" onclick="calcNumbers(addb.value)"> 
+                    </div>
+                    <div class="row">
+                        <input type="button"  name="b6" value="6" onclick="calcNumbers(b6.value)"> 
+                        <input type="button"  name="b5" value="5" onclick="calcNumbers(b5.value)"> 
+                        <input type="button"  name="b4" value="4" onclick="calcNumbers(b4.value)"> 
+                        <input type="button"  name="subb" value="-" onclick="calcNumbers(subb.value)"> 
+                    </div>
+                    <div class="row">
+                        <input type="button"  name="b3" value="3" onclick="calcNumbers(b3.value)"> 
+                        <input type="button"  name="b2" value="2" onclick="calcNumbers(b2.value)"> 
+                        <input type="button"  name="b1" value="1" onclick="calcNumbers(b1.value)"> 
+                        <input type="button"  name="mulb" value="*" onclick="calcNumbers(mulb.value)"> 
+                    </div>
+                    <div class="row">
+                        <input type="button"  name="b0" value="0" onclick="calcNumbers(b0.value)"> 
+                        <input type="button"  name="potb" value="." onclick="calcNumbers(potb.value)"> 
+                        <input type="button"  name="divb" value="/" onclick="calcNumbers(divb.value)"> 
+                        <input type="button"  class="red" value="=" onclick="displayResult.value=eval(displayResult.value)"> 
+                    </div>
+                    <div class="row" id="backspacebutton">
+                        <input type="button" class="natija1" name="del" value="Delete" onclick="back()">
+                    </div>
                 </div>
-                <div class="row">
-                    <input type="button"  name="b3" value="3" onclick="calcNumbers(b3.value)"> 
-                    <input type="button"  name="b2" value="2" onclick="calcNumbers(b2.value)"> 
-                    <input type="button"  name="b1" value="1" onclick="calcNumbers(b1.value)"> 
-                    <input type="button"  name="mulb" value="*" onclick="calcNumbers(mulb.value)"> 
-                </div>
-                <div class="row">
-                    <input type="button"  name="b0" value="0" onclick="calcNumbers(b0.value)"> 
-                    <input type="button"  name="potb" value="." onclick="calcNumbers(potb.value)"> 
-                    <input type="button"  name="divb" value="/" onclick="calcNumbers(divb.value)"> 
-                    <input type="button"  class="red" value="=" onclick="displayResult.value=eval(displayResult.value)"> 
-                </div>
-                <div class="row" id="backspacebutton">
-                    <input type="button" class="natija1" name="del" value="Delete" onclick="back()">
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

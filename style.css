@@ -1,12 +1,22 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(70, 64, 64);
+    position: relative;
+    width: 90%;
+    height: 690px;
+    background-image: url(https://img.freepik.com/free-vector/leaves-background-with-metallic-foil_79603-956.jpg?w=2000);
+    /* background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    
+    /* background-color: rgb(70, 64, 64); */
 }
+
 .container{
     position: fixed;
-    top: 30%;
-    left: 40%;
+    top: 18%;
+    left: 38%;
     background-color: rgb(56, 55, 55);
     width: 350px;
     height: 450px;
